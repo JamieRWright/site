@@ -554,7 +554,7 @@ form {
 .flex-card {
 	display: flex;
 	flex-direction: column;
-	background-color: #2e3738;
+	background-color: #FFFFFF;
 	box-shadow: 0 1px 3px rgba(0,0,0,.25);
 	padding: 0px;
 	margin:10px;
@@ -562,8 +562,14 @@ form {
 	position: relative;
 }
 
+
 .flex-card-text {
 	width: 100%;
+	
+}
+
+.flex-card-text h2, h3, p {
+	color: #000;
 }
 
 .flex-documentation-images {
@@ -634,6 +640,8 @@ form {
 	position: relative;
 	transition: 0.25s;
 }
+.card-highlight h3{
+	color:#FFFFFF;}
 .card-highlight:hover {
 	background-color: #0b95e07e;
 }

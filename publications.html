@@ -19,7 +19,11 @@
     <div id="header-wrapper">
       <div class="menu-logo"> 
         <a href="index.html">
-          <img src="./images/COVERT_named.png" height="100" />
+                    <svg width="200" height="60" xmlns="http://www.w3.org/2000/svg">
+            <text x="10" y="40" font-family="Segoe UI, sans-serif" font-size="36" fill="#333">
+              <tspan font-weight="bold">J</tspan>Wright
+            </text>
+          </svg>  
         </a>
       </div>
       <div id="menu-desktop">
@@ -29,7 +33,7 @@
               <li><a class="menu-item-text" href="about.html">About</a></li>
               <li><a class="menu-item-text" href="news.html">News</a></li>
               <li><a class="menu-item-text" href="publications.html">Publications</a></li>
-              <li><a class="menu-item-text" href="members.html">Members</a></li>
+              <li><a class="menu-item-text" href="teaching.html">Members</a></li>
           </ul>
         </nav>
       </div>
@@ -43,14 +47,20 @@
       <nav>
         <div class="collapsible-menu">
           <input type="checkbox" id="menu">
-          <label for="menu" class = "menu-logo"> <img src="./images/COVERT_named.png" alt="COVERT Logo" />  </label>
+          <label for="menu" class = "menu-logo">           
+            <svg width="200" height="60" xmlns="http://www.w3.org/2000/svg">
+            <text x="10" y="40" font-family="Segoe UI, sans-serif" font-size="36" fill="#333">
+              <tspan font-weight="bold">J</tspan>Wright
+            </text>
+          </svg>    
+          </label>
           <div class="menu-content">
             <ul id="header-menu">
               <li><a class="menu-item-text" href="index.html">Home</a></li>
               <li><a class="menu-item-text" href="about.html">About</a></li>
               <li><a class="menu-item-text" href="news.html">News</a></li>
               <li><a class="menu-item-text" href="publications.html">Publications</a></li>
-              <li><a class="menu-item-text" href="members.html">Members</a></li>
+              <li><a class="menu-item-text" href="teaching.html">Members</a></li>
             </ul>
           </div>            
         </div>        
@@ -65,7 +75,7 @@
     <main>
       <div class="Alt-sect">
       <p>
-        Here you can find a list of publications attributed to the COVERT project
+        Here you can find a list of my publications. They are listed in the following order: peer-reviewed publications, workshop papers, Isabelle AFP Entries (i.e. Archive of Formal Proofs).
       </p></div>
       
       <!--PUBLICATION TEMPLATE, copy and paste, filling in respective info-->
@@ -80,6 +90,87 @@
             </div>     
             
             <a class="card-link" href="https://www.computer.org/csdl/proceedings-article/csf/2024/620300a409/1W0eVVRRd04">
+              <div class="card-highlight">
+                <h3>Read more</h3>
+                <img class="card-icon" src="./images/external-link.png" alt="">
+              </div>
+            </a>
+
+          </div>      
+      </div>
+      <div class="flex-card">
+          <div class="flex-card-content">
+            <div class="flex-card-text">
+              <h2 class="card-title"> A formalized programming language with speculative execution</h2>
+              <h3 class="card-description"><b>In Isabelle Workshop 2024, associated with ITP 2024</b></h3>
+              <h3 class="card-description"><b>Archive Of Formal Proofs (AFP 2024)</b></h3>
+              <p class="card-description">
+                We present the formalization of a programming language whose operational semantics allows for the speculative execution of its statements. This type of semantics is relevant for discussing transient execution security vulnerabilities such as Spectre and Meltdown. An instantiation of Relative Security to this language is provided along with proofs of security and insecurity of selected programs from the Spectre benchmark.
+              </p>
+            </div>     
+            
+            <a class="card-link" href="https://files.sketis.net/Isabelle_Workshop_2024/Isabelle_2024_paper_4.pdf">
+              <div class="card-highlight">
+                <h3>Paper</h3>
+                <img class="card-icon" src="./images/external-link.png" alt="">
+              </div>
+            </a>            
+            <a class="card-link" href="https://files.sketis.net/Isabelle_Workshop_2024/Isabelle_2024_paper_4.pdf">
+              <div class="card-highlight">
+                <h3>AFP entry</h3>
+                <img class="card-icon" src="./images/external-link.png" alt="">
+              </div>
+            </a>
+          </div>      
+      </div>
+      <div class="flex-card">
+          <div class="flex-card-content">
+            <div class="flex-card-text">
+              <h2 class="card-title">Relative Security</h2>
+              <h3 class="card-description"><b>Archive Of Formal Proofs (AFP 2024)</b></h3>
+              <p class="card-description">
+                This entry formalizes the notion of relative security presented in the CSF 2024 paper “Relative Security: Formally Modeling and (Dis)Proving Resilience Against Semantic Optimization Vulnerabilities” by Brijesh Dongol, Matt Griffin, Andrei Popescu and Jamie Wright. It defines two versions of relative security: a finitary one (restricted to finite traces), and an infinitary one (working with both finite and infinite traces). It introduces unwinding methods for verifying relative security in both the finitary and infinitary versions, and proves their soundness. The proof of soudness in the infinitary case is a substantial application of Isabelle’s corecursion and coinduction infrastructure.
+              </p>
+            </div>     
+            
+            <a class="card-link" href="https://www.isa-afp.org/entries/Relative_Security.html">
+              <div class="card-highlight">
+                <h3>Read more</h3>
+                <img class="card-icon" src="./images/external-link.png" alt="">
+              </div>
+            </a>
+
+          </div>      
+      </div>
+      <div class="flex-card">
+          <div class="flex-card-content">
+            <div class="flex-card-text">
+              <h2 class="card-title">Secret-Directed Unwinding</h2>
+              <h3 class="card-description"><b>Archive Of Formal Proofs (AFP 2024)</b></h3>
+              <p class="card-description">
+                This entry formalizes the secret-directed unwinding disproof method for relative security. The method was presented in the CSF 2024 paper "Relative Security: Formally Modeling and (Dis)Proving Resilience Against Semantic Optimization Vulnerabilities". Secret-directed unwinding can be used to prove the existence of transient execution vulnerabilities. The main characteristics of secret-directed unwinding are that (1) it is used to disprove rather than prove security and (2) it proceeds in a manner that is "directed" by given sequences of secrets. The second characteristic is shared with the unwinding method for bounded- deducibility security.
+              </p>
+            </div>     
+            
+            <a class="card-link" href="https://www.isa-afp.org/entries/Secret_Directed_Unwinding.html">
+              <div class="card-highlight">
+                <h3>Read more</h3>
+                <img class="card-icon" src="./images/external-link.png" alt="">
+              </div>
+            </a>
+          </div>      
+      </div>
+      <div class="flex-card">
+          <div class="flex-card-content">
+            <div class="flex-card-text">
+              <h2 class="card-title">More Operations on Lazy Lists</h2>
+              <h3 class="card-description"><b>Archive Of Formal Proofs (AFP 2024)</b></h3>
+              <p class="card-description">
+                We formalize some operations and reasoning infrastructure on lazy (coinductive) lists. The operations include: building a lazy list from a function on naturals and an extended natural indicating the intended domain, take-until and drop-until (which are variations of take-while and drop-while), splitting a lazy list into a lazy list of lists with cut points being those elements that satisfy a predicate, and filtermap. The reasoning infrastructure includes: a variation of the corecursion combinator, multi-step (list-based) coinduction for lazy-list equality, and a criterion for the filtermapped equality of two lazy lists.
+              </p>
+            </div>     
+            
+            <a class="card-link" href="https://www.isa-afp.org/entries/More_LazyLists.html">
               <div class="card-highlight">
                 <h3>Read more</h3>
                 <img class="card-icon" src="./images/external-link.png" alt="">
