@@ -83,7 +83,7 @@ header {
     font-size: 20px;
     display: block;
     cursor: pointer;
-    background: url(../images/chevronR.png) no-repeat right center;
+    background: url(../images/chevron.png) no-repeat right center;
 	background-size: 20px;
 	background-position: right 30px center;
     padding: 10px;
@@ -173,7 +173,7 @@ label {
 
 	
 input:checked +label {
-	background: url(../images/chevron.png) no-repeat left center;
+	background: url(../images/chevronR.png) no-repeat left center;
 	background-size: 20px;
 	background-position: right 30px center;
 
@@ -259,6 +259,14 @@ a {
 	margin: 10px;
 	padding: 10px;
 	transition:.25s;
+	text-decoration: none;
+	color:#0b96e0;
+}
+
+.UOS {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
 }
 
 a:hover {
@@ -292,6 +300,8 @@ a:hover {
 	border-radius: 10px;
 	transition: 0.25s;
 }
+#button p{
+	color: #fff;}
 #button:hover {
 	background-color: #455354;
 }
@@ -354,6 +364,10 @@ main {
 	background-color: #FFFFFF;
 }
 
+.about{
+	color:#fff;
+}
+
 .Alt-sect  h1{
     color: #0b96e0;
 	display: flex;
@@ -364,11 +378,14 @@ main {
 
 .Alt-sect  p{
     color: #222a2a;
-	display: flex;
-	text-align: center; 
+	display: inline-block;
+	text-align: left; 
 	align-items: center;
 	justify-content: center;
 }
+
+.flex-card-header{
+		padding: 1rem;}
 
 /*objectives*/
 
@@ -457,6 +474,7 @@ main {
   scroll-behavior: smooth;
   padding: 10px 20px;
   scrollbar-width: none; /* Firefox */
+  justify-content: center;
 }
 
 .partner-carousel::-webkit-scrollbar {
@@ -468,7 +486,7 @@ main {
 }
 
 .partner-carousel img {
-  height: 80px;
+  height: 150px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
@@ -762,10 +780,9 @@ form {
 
 	
 	.flex-card-header {
-		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		align-items: stretch;
-		gap: 2rem;
+		gap: 0rem;
 		padding: 2rem;
 		flex-wrap: wrap;
 	}

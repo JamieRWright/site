@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="Author" content="Jamie Wright">
-  <title>COVERT</title>
-  <link rel="shortcut icon" type="image/x-icon" href="./images/COVERT.ico" />
+  <title>Jamie Wright</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./images/JW.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,9 +34,9 @@
           <ul>
               <li><a class="menu-item-text" href="index.html">Home</a></li>
               <li><a class="menu-item-text" href="about.html">About</a></li>
-              <li><a class="menu-item-text" href="news.html">News</a></li>
+              <li><a class="menu-item-text" href="Jamie_Wright_CV.pdf">CV</a></li>
               <li><a class="menu-item-text" href="publications.html">Publications</a></li>
-              <li><a class="menu-item-text" href="teaching.html">Members</a></li>
+              <li><a class="menu-item-text" href="teaching.html">Teaching</a></li>
           </ul>
         </nav>
       </div>
@@ -61,9 +61,9 @@
             <ul id="header-menu">
               <li><a class="menu-item-text" href="index.html">Home</a></li>
               <li><a class="menu-item-text" href="about.html">About</a></li>
-              <li><a class="menu-item-text" href="news.html">News</a></li>
+              <li><a class="menu-item-text" href="Jamie_Wright_CV.pdf">CV</a></li>
               <li><a class="menu-item-text" href="publications.html">Publications</a></li>
-              <li><a class="menu-item-text" href="teaching.html">Members</a></li>
+              <li><a class="menu-item-text" href="teaching.html">Teaching</a></li>
             </ul>
           </div>            
         </div>        
@@ -74,78 +74,62 @@
 
     <!--Covert overview-->
     <div class="flex-card-header">
-      <h1 class="Covert-colour"><b>Jamie</b> R. Wright</h1> 
-      <h2>PhD @ <a href="https://www.sheffield.ac.uk/dcs" rel="external nofollow noopener" target="_blank">University of Sheffield</a> </h2>  
+      <h1 class="Covert-colour"><b>Jamie</b> Wright</h1> 
+      <h2>PhD @ <a href="https://www.sheffield.ac.uk/dcs" class="UOS"> University of Sheffield. </a> Bsc (Hons)</h2>  
     </div>
 
     <!--Our vision-->
     <main>
       <div class="Alt-sect">
-      <h1>Our vision</h1>
+      <h1>About Me</h1>
       <p>
-          Our vision is to provide reusable models, tools and techniques that enable the verification of safety and security properties over a range of advanced architectures, and a verified set of concurrency abstractions that guarantee both safety and security.
+          Welcome! I'm Jamie Wright, a PhD student in the Security Of Adavaced Systems/Foundations Of Logic group at the <a href="https://www.sheffield.ac.uk/dcs" class="UOS">University of Sheffield</a>.
+          My primary research interests are formal methods for security and proof-theoretic approaches, particularly in Isabelle/HOL under the supervision of Dr. <a href="https://www.andreipopescu.uk/" class="UOS">Andrei Popescu</a>.
+          I'm currently working on the <a href="https://covert-project.github.io/site/" class="UOS">COVERT</a> project (alongside collaborators in Kent/Surrey), which aims to provide reusable models, tools and techniques that enable the verification of safety and security properties over a range of advanced architectures.
+          Alongside this work, I am collaborating with Liron Cohen and Reuben Rowe on formalising Infinite Descent, with long-term plans to develop an object logic/Sledgehammer-like tool for Isabelle that integrates this soundness principle.
+          I'm grateful to have my studies fully funded by the EPSRC Doctoral Training Partnership (DTP).
+          <br><br>
+          Previously, I completed my BSc(Hons I) in Computer Science and Mathematics w/ Year in Industry at the University Of Sheffield. My <a href="https://github.com/JamieRWright/ChessInIsabelle" class="UOS">dissertation</a> involved abstracting a generic two-player game and characterising a general winning strategy - formalised in Isabelle/HOL - with potential for instantiation in games such as Chess. have also worked alongside Dr. James Cranch on utilising the SAGE Maths extension of Python to solve Olympiad maths questions in the context of <a href="https://github.com/JamieRWright/Euclidean-Geometry" class="UOS">Euclidean Geometry</a>, under the SURE research scheme.
+          <br><br>
+          Beyond my research, I am also a passionate teacher, with over 5 years of formal experience, delivering seminars up to a Master's level in Computer Science, and undergraduate in Mathematics. My teaching interests (in part) cover Logic, Programming Languages, Algebra and Piano.
       </p>
-      </div>
 
+      <h1>Selected Publication</h1>
+      </div>
       <div class="flex-card">
           <div class="flex-card-content">
             <div class="flex-card-text">
-              <h2 class="card-title">Latest News</h2>
-              <h3 class="card-description">COVERT Project website is now live! - 29/05/25</h3>
+              <h2 class="card-title">Relative Security: Formally Modeling and (Dis)Proving Resilience Against Semantic Optimization Vulnerabilities</h2>
+              <h3 class="card-description"><b>37th IEEE Computer Security Foundations Symposium (CSF 2024)</b></h3>
               <p class="card-description">
-                We are pleased to announce the official lauch of the COVERT project website!
+                Meltdown and Spectre are vulnerabilities known as transient execution vulnerabilities, where an attacker exploits speculative execution (a semantic optimization present in most modern processors) to break confidentiality. We introduce relative security, a general notion of information-flow security that models this type of vulnerability by contrasting the leaks that are possible in a “vanilla” semantics with those possible in a different semantics, often obtained from the vanilla semantics via some optimizations. We describe incremental proof methods, in the style of Goguen and Meseguer's unwinding, both for proving and for disproving relative security, and deploy these to formally establish the relative (in)security of some standard Spectre examples. Both the abstract results and the case studies have been mechanized in the Isabelle/HOL theorem prover.
               </p>
             </div>     
             
-            <a class="card-links" href="news.html">
+            <a class="card-link" href="https://www.computer.org/csdl/proceedings-article/csf/2024/620300a409/1W0eVVRRd04">
               <div class="card-highlight">
-                <h3>More News</h3>
+                <h3>Read more</h3>
+                <img class="card-icon" src="./images/external-link.png" alt="">
               </div>
             </a>
-
           </div>      
       </div>
 
       <div id="partners">
-      <div class="Alt-sect"><h1 >Our Partners</h1></div>
+      <div class="Alt-sect"><h1 >Discography</h1></div>
       <div class="partner-carousel-wrapper">
         <button class="scroll-btn left">&#8249;</button>
 
         <div class="partner-carousel">
-          <a href="https://www.sheffield.ac.uk/" target="_blank">
-            <img src="images/TUOS.png" alt="University Of Sheffield">
+          <a href="https://open.spotify.com/album/04oXlDn0Kk6XaH3240w6av?si=hC-zG7t1RtyhkhnI85CtgQ&context=spotify%3Aalbum%3A04oXlDn0Kk6XaH3240w6av&fbclid=PAZXh0bgNhZW0CMTEAAae26-FmVSC_BkN_8fd4ym7pKX5wk8P0vemoHTgE2itByO3aQxDsAR5JxSBz7g_aem_4xYatDZhJmDQseLs2zmV5Q&nd=1&dlsi=a5acd1c6bc0c4678" target="_blank">
+            <img src="images/AQ.jpg" alt="Another Quarter">
           </a>
-          <a href="https://uol.de/en" target="_blank">
-            <img src="images/UOL.png" alt="Carl von Ossietzky University Oldenburg">
+          <a href="https://open.spotify.com/album/5VrjpVd1n3XqnDRAhVGXty?highlight=spotify:track:0IZiG6kdCpo9ervBAjXGFF" target="_blank">
+            <img src="images/SF.jpg" alt="Streetlight Fables">
           </a>
-          <a href="https://www.surrey.ac.uk/" target="_blank">
-            <img src="images/UOSurrey.png" alt="University Of Surrey">
+          <a href="https://open.spotify.com/album/3C6tyHGNgiXrF3XpbZ2oy5?si=pIi4YjrvQhmQZogjk5GSzg" target="_blank">
+            <img src="images/A.png" alt="AIRE">
           </a>
-          <a href="https://www.arm.com/" target="_blank">
-            <img src="images/ARM.png" alt="ARM">
-          </a>
-          <a href="https://www.galois.com" target="_blank">
-            <img src="images/GAL.png" alt="Galois, Inc">
-          </a>
-          <a href="https://www.kent.ac.uk/" target="_blank">
-            <img src="images/UOK.png" alt="University Of Kent">
-          </a>
-          <a href="https://vetss.org.uk/" target="_blank">
-            <img src="images/VeTSS.png" alt="VeTSS">
-          </a>
-          <a href="https://vu.nl/en" target="_blank">
-            <img src="images/VU.png" alt="Free (VU) University of Amsterdam">
-          </a>
-          <a href="https://www.unimelb.edu.au/" target="_blank">
-            <img src="images/MEL.png" alt="The University Of Melbourne">
-          </a>
-          <a href="https://www.uni-augsburg.de/en/" target="_blank">
-            <img src="images/AUS.png" alt="University Of Ausburg">
-          </a>
-          <a href="https://www.gov.uk/government/groups/defence-science-and-technology" target="_blank">
-            <img src="images/DSTL.png" alt="Defence Science and Technology, Org">
-          </a>
-          <!-- Add more as needed -->
         </div>
         <button class="scroll-btn right">&#8250;</button>
 
