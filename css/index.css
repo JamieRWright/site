@@ -385,7 +385,20 @@ main {
 }
 
 .flex-card-header{
-		padding: 1rem;}
+	padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+	justify-content: space-between; 
+	flex-wrap: nowrap;  
+}
+.image-section img {
+	padding: 1rem;
+  max-width: 300px;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
 
 /*objectives*/
 
@@ -780,7 +793,6 @@ form {
 
 	
 	.flex-card-header {
-		flex-direction: column;
 		align-items: stretch;
 		gap: 0rem;
 		padding: 2rem;
